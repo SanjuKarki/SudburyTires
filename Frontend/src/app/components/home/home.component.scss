@@ -1,0 +1,62 @@
+.navdgn{
+    margin-left: 30rem;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make the container full height of the viewport */
+}
+
+.image-container img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover; /* Stretch the image to cover the container */
+}
+
+.centered-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 44rem; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.main-search{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 200px; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.btnColor{
+    background-color: grey;
+}
+
+.white-text {
+    color: white;
+  }
+  .left-align {
+    text-align: left;
+  }
+
+  .grp-title-text {
+    margin-top: 20px; /* Adjust the margin as needed */
+    color: white;
+  }
+

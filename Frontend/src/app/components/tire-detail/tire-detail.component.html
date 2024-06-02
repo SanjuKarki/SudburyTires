@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<!-- tire-details.component.html -->
+<div class="container-fluid" style="background-color: white;">
+    <div class="row">
+        <!-- Left Column: Image and Price -->
+        <div class="col">
+            <div class="card   border-0">
+                <!-- Image -->
+                <img [src]="selectedTire.imagePath" class="card-img-top" alt="Tire Image">
+                <!-- Price -->
+               
+            </div>
+        </div>
+
+        <!-- Right Column: Details -->
+        <div class="col-md-6">
+            <div class="card  border-0">
+                <div class="card-body" style="margin-left: 5rem;">
+                    <!-- Tire Details -->
+                    <h5 class="card-title">{{ selectedTire.name }}</h5>
+                    <p class="card-text">Brand: {{ selectedTire.brand }}</p>
+                    <p class="card-text">Size: {{ selectedTire.size }}</p>
+                    <p class="card-text">Size: {{ selectedTire.detail }}</p>
+                    <p class="card-text">{{ selectedTire.description }}</p>
+                        <p class="card-text">Price: <b>${{ selectedTire.price }}</b></p>
+                        <!-- <a href="#" class="btn btn-primary mt-auto">Add to Cart</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

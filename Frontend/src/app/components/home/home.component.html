@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="image-container" style="height: 300px; width: 100%;">
+    <img src="assets/imgs/Tire.jpg" alt="Image" style="height: 100%; width: 100%; object-fit: cover;">
+    <div class="input-group mb-3 centered-input">
+        <button class="btnColor btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">On Special</a></li>
+            <li><a class="dropdown-item" href="#">Tires</a></li>
+            <li><a class="dropdown-item" href="#">Wheels</a></li>
+            <li><a class="dropdown-item" href="#">Brands</a></li>
+
+  </ul>
+        <input type="text" class="form-control" placeholder="Winter Tires">
+        <div class="input-group-append">
+            <button style="background-color: whitesmoke;" class="btn btn-outline-warning" type="search">Search</button>
+        </div>
+    </div>
+</div>
+<!-- <h2>On Special</h2> -->
+<h2 class="grp-title-text left-align mt-4">On Special</h2>
+<div *ngIf="tires.length > 0">
+    <!-- Calculate the number of rows needed -->
+    <ng-container *ngFor="let item of getRows(tires)">
+        <div class="row">
+            <!-- Generate columns for each item in the current row -->
+            <div class="col" *ngFor="let tire of item" style="max-width: 17rem;">
+                <div class="card mb-3 mr-3" (click)="GetItemDetail(tire)">
+                    <img class="card-img-top" src="{{tire.imagePath}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{tire.name}}</h5>
+                        <a  (click)="GetItemDetail(tire)" class="btn btn-dark">On Sale</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    
+</div>
+

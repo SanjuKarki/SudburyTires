@@ -1,0 +1,60 @@
+.carddesign {
+    max-width: 500px; /* Set maximum width */
+    width: 80%; /* Set width */
+    margin-top: 10rem;
+    // margin: auto; /* Center horizontally */
+    border-radius: 15px; /* Add border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+.carddesign .card-header {
+    background-color: #f8f9fa; /* Change background color */
+    border-bottom: 1px solid #dee2e6; /* Add bottom border */
+}
+
+.carddesign .card-body {
+    padding: 30px; /* Increase padding */
+}
+
+.carddesign .form-control {
+    border-radius: 10px; /* Add border radius */
+}
+
+.carddesign .btn-primary {
+    border-radius: 10px; /* Add border radius */
+}
+
+.carddesign .btn-primary:hover {
+    background-color: #007bff; /* Change hover background color */
+}
+
+.carddesign .text-danger {
+    font-size: 12px; /* Adjust font size */
+}
+
+.carddesign {
+    max-width: 500px; /* Set maximum width */
+    width: 80%; /* Set width */
+    border-radius: 15px; /* Add border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: all 0.3s ease; /* Add transition effect */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Align content vertically at center */
+    align-items: center; /* Align content horizontally at center */
+}
+
+.carddesign .card-body {
+    width: 100%; /* Make card body full width */
+    padding: 30px; /* Increase padding */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Align content vertically at center */
+    align-items: center; /* Align content horizontally at center */
+}
+
+.carddesign .form-group {
+    width: 100%; /* Make form group full width */
+    margin-bottom: 20px; /* Add margin bottom */
+}
