@@ -1,0 +1,32 @@
+# Ignore common files
+.vs/
+*.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# Ignore NuGet packages
+*.nuget/
+packages/
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+
+# Ignore build output for both projects
+*/bin/
+*/obj/
+
+# Ignore build artifacts
+*.dll
+*.exe
+*.pdb
+*.log
+*.zip
+*.bak
+
+# Ignore node_modules folder (for frontend)
+Frontend/node_modules/
+
+# Ignore user-specific files
+*.userprefs
+*.lock
