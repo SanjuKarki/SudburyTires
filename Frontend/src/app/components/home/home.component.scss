@@ -1,27 +1,12 @@
-.navdgn{
-    margin-left: 30rem;
-}
-
-.nav-link{
-    font-weight: bold;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 .image-container {
     position: relative;
-    width: 100%;
-    height: 100vh; /* Make the container full height of the viewport */
+    height: 300px;
 }
 
 .image-container img {
     width: 100%;
-    height: 60%;
-    object-fit: cover; /* Stretch the image to cover the container */
+    height: 100%;
+    object-fit: cover;
 }
 
 .centered-input {
@@ -29,34 +14,62 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
-    width: 44rem; /* Adjust as needed */
-    box-sizing: border-box;
+    width: 60%;
 }
 
-.main-search{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    width: 200px; /* Adjust as needed */
-    box-sizing: border-box;
+.btn-dark {
+    background-color: black;
+    border-color: black;
 }
 
-.btnColor{
-    background-color: grey;
+.dropdown-menu {
+    background-color: black;
 }
 
-.white-text {
+.dropdown-item {
+    color: orange;
+}
+
+.form-control {
+    background-color: black;
     color: white;
-  }
-  .left-align {
-    text-align: left;
-  }
+    border-color: orange;
+}
 
-  .grp-title-text {
-    margin-top: 20px; /* Adjust the margin as needed */
-    color: white;
-  }
+.btn-orange {
+    background-color: orange;
+    border-color: orange;
+    color: black;
+}
+
+.btn-orange:hover {
+    background-color: #ff8c00; /* Darker shade of orange on hover */
+    border-color: #ff8c00;
+}
+
+.custom-input-group .dropdown-menu {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3); /* Increased shadow */
+}
+
+.grp-title-text {
+    color: #FFA500; /* Orange color */
+    font-weight: bold;
+}
+
+.custom-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.no-special-message {
+    margin-top: 20px;
+    color: #fff; /* White color */
+}
+
+
 

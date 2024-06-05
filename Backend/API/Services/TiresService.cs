@@ -20,9 +20,9 @@ public class TiresService : ITiresService
 
     public List<Tire> GetTires()
     {
-        var tire = _tiresRepository.GetTires();
+        var tires = _tiresRepository.GetTires();
 
-        return tire;
+        return tires;
     }
 
 }

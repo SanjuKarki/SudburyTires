@@ -67,10 +67,8 @@ getTires(){
 }
 
 // Add tire data to localStorage
-addToLocalStorage(tire: Tire) {
-  if(!localStorage.getItem('tires')){
-  //const existingTires = localStorage.getItem('tires');
-  //existingTires.push(tire);
+addToLocalStorage(tire: any) {
+  if(!localStorage.getItem('tires') || localStorage.getItem('tires') != JSON.stringify(tire) ){
   localStorage.setItem('tires', JSON.stringify(tire));
   }
 }

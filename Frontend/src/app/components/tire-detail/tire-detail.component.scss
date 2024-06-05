@@ -1,8 +1,46 @@
-.container {
-   
-    top: 0;
-    left: 0;
-    width: 30%;
-    padding: 20px;
-    height: 500px;
+/* General Styles */
+.product-detail-container {
+    padding: 30px;
+    color: white; /* Set text color to white */
+}
+
+/* Product Image Styles */
+.product-image img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Product Details Styles */
+.product-details {
+    padding-left: 30px;
+}
+
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: orange; /* Set title text color to orange */
+}
+
+.product-brand,
+.product-size,
+.product-detail {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 18px; /* Adjust font size of price */
+    margin-top: 20px;
+}
+
+.price-highlight {
+    font-size: 30px; /* Increase font size of price */
+    color: orange; /* Set price color to a different shade */
+    font-weight: bold; /* Make price bold */
 }

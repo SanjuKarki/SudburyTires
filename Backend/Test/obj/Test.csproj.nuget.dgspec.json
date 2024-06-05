@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\Test\\Test.csproj": {}
+    "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\Test\\Test.csproj": {}
   },
   "projects": {
-    "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\API\\API.csproj": {
+    "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\API\\API.csproj",
+        "projectUniqueName": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\API\\API.csproj",
+        "projectPath": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Sparsh\\.nuget\\packages\\",
-        "outputPath": "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\API\\obj\\",
+        "outputPath": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -110,14 +110,14 @@
         }
       }
     },
-    "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\Test\\Test.csproj": {
+    "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\Test\\Test.csproj",
+        "projectUniqueName": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\Test\\Test.csproj",
+        "projectPath": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\Sparsh\\.nuget\\packages\\",
-        "outputPath": "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\Test\\obj\\",
+        "outputPath": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -139,8 +139,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\API\\API.csproj": {
-                "projectPath": "D:\\01 - Cambrian College\\Capstone project\\src\\Backend\\API\\API.csproj"
+              "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\API.csproj": {
+                "projectPath": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\API.csproj"
               }
             }
           }
