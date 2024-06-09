@@ -17,8 +17,8 @@
 </div>
 
 <!-- <h2>On Special</h2> -->
-<h2 class="grp-title-text mt-4 text-center">On Special</h2>
-<div *ngIf="tires.length > 0">
+<h2 class="grp-title-text mt-4 text-center">Tires</h2>
+<div *ngIf="tires?.length > 0">
     <!-- Calculate the number of rows needed -->
     <ng-container *ngFor="let item of getRows(tires)">
         <div class="row">
@@ -38,7 +38,7 @@
 
     
 </div>
-<div *ngIf="tires.length==0">
-    <h2 class="ml-5" style="color: white;">No Special tires found.</h2>
+<div *ngIf="tires?.length==0">
+    <h2 class="ml-5" style="color: white;">No tires found.</h2>
 </div>
 

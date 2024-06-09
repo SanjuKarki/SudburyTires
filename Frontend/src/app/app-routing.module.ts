@@ -16,6 +16,8 @@ const routes: Routes = [
     path:'tire-detail', component: TireDetailComponent
   },
   { path: 'tire-detail/:tireId', component: TireDetailComponent },
+  { path: 'special', component: HomeComponent },
+  { path: 'winter', component: HomeComponent },
   {
     path:'**', redirectTo:'login', pathMatch: 'full'
   },

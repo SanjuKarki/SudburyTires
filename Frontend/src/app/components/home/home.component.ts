@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AppService } from 'src/app/services/app.service';
 import { TiresService } from 'src/app/services/tires.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -14,43 +15,28 @@ items: any;
 tires:any;
 
 constructor(
-  private fb: FormBuilder,
+  private fb: FormBuilder,private location: Location,
   private router: Router,private apiService: AppService,private tiresService: TiresService
 ) {
-  this.items = [
-    {  label: 'On Special',  routerLink: '/' },
-    {  label: 'Tires',   routerLink: '/' },
-    {  label: 'Brands',   routerLink: '/' },
-    {  label: 'Wheels',   routerLink: '/' },
-    // Add more menu items as needed
-  ];
-
  }
  
 ngOnInit(){
-//   this.tires = [
-//     { id:1, name: "VISION GV8 INVADER", imagePath: "assets/imgs/80.jpg", detail:"fsdh sdfhsdlisd" },
-//     { name: "Another Tire Name", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire Name", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire 2", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire Name", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire Name", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire 2", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire Name", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire Name", imagePath: "assets/imgs/80.jpg" },
-//     { name: "Another Tire 2", imagePath: "assets/imgs/80.jpg" }
-// ];
-
-this.getTires();
-
+  let currentUrl = this.location.path();
+  let menuSelected = currentUrl.split('/')[1];
+  this.getTires(menuSelected);
 }
 
-getTires(){
+getTires(menuSelected:string){
     debugger;
     this.tiresService.getTires().subscribe((res)=>{
       debugger;
+      this.addToLocalStorage(res);
       this.tires = res;
-      this.addToLocalStorage(this.tires);
+      if((menuSelected !='' || menuSelected !=undefined) && (menuSelected != "home")) {
+      this.tires = res.filter(x => 
+        (x.seasonType || '').toLowerCase() === (menuSelected || '').toLowerCase()
+    );
+  }
     }
         // response => {
         //   this.isValidUser=true;
