@@ -4,8 +4,8 @@
     <div class="input-group mb-3 centered-input">
         <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select tire </button>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#" >On Special</a></li>
-            <li><a class="dropdown-item" href="#">Tires</a></li>
+            <li><a class="dropdown-item" href="/winter" >On Special</a></li>
+            <li><a class="dropdown-item" href="/home">Tires</a></li>
             <li><a class="dropdown-item" href="#">Wheels</a></li>
             <li><a class="dropdown-item" href="#">Brands</a></li>
         </ul>
@@ -17,7 +17,7 @@
 </div>
 
 <!-- <h2>On Special</h2> -->
-<h2 class="grp-title-text mt-4 text-center">Tires</h2>
+<h2 class="grp-title-text mt-4 text-center">{{this.menuSelected == 'home' ? 'All Tires' : this.menuSelected }}</h2>
 <div *ngIf="tires?.length > 0">
     <!-- Calculate the number of rows needed -->
     <ng-container *ngFor="let item of getRows(tires)">

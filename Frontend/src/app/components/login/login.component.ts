@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AppService } from 'src/app/services/app.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -17,14 +18,21 @@ export class LoginComponent {
   })
 
   constructor(
-    private fb: FormBuilder,
+    private fb: FormBuilder,private authService: AuthService,
     private router: Router,private apiService: AppService
   ) { }
+
+  ngOnInit(){
+    if(this.authService.isSignedIn){
+      this.router.navigate(['home']);
+    }
+  }
 
   get password() { return this.loginForm.controls['password']; }
   get username() {
     return this.loginForm.controls['username'];
   }
+
   loginUser(){
     debugger;
     const { username, password } = this.loginForm.value;
@@ -34,6 +42,7 @@ export class LoginComponent {
           this.isValidUser=true;
           debugger;
           this.ErrorMsg = "User validated successfully"
+          this.addToLocalStorage();
           this.router.navigate(['home']);
 
         }, // Handle success response
@@ -43,4 +52,11 @@ export class LoginComponent {
         } // Handle error response
       );
   }
+
+  // Add tire data to localStorage
+addToLocalStorage() {
+  localStorage.setItem('SignedIn', 'true');
+}
+
+
   }

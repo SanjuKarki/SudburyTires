@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { TireDetailComponent } from './components/tire-detail/tire-detail.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { TiresService } from './services/tires.service';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './services/auth.guard';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [TiresService,AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

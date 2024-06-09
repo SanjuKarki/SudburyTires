@@ -13,6 +13,7 @@ import { Location } from '@angular/common';
 export class HomeComponent {
 items: any;
 tires:any;
+menuSelected:string;
 
 constructor(
   private fb: FormBuilder,private location: Location,
@@ -22,19 +23,19 @@ constructor(
  
 ngOnInit(){
   let currentUrl = this.location.path();
-  let menuSelected = currentUrl.split('/')[1];
-  this.getTires(menuSelected);
+  this.menuSelected = currentUrl.split('/')[1];
+  this.getTires();
 }
 
-getTires(menuSelected:string){
+getTires(){
     debugger;
     this.tiresService.getTires().subscribe((res)=>{
       debugger;
       this.addToLocalStorage(res);
       this.tires = res;
-      if((menuSelected !='' || menuSelected !=undefined) && (menuSelected != "home")) {
+      if((this.menuSelected !='' || this.menuSelected !=undefined) && (this.menuSelected != "home")) {
       this.tires = res.filter(x => 
-        (x.seasonType || '').toLowerCase() === (menuSelected || '').toLowerCase()
+        (x.seasonType || '').toLowerCase() === (this.menuSelected || '').toLowerCase()
     );
   }
     }
