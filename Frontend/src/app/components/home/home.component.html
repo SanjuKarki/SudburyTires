@@ -4,20 +4,20 @@
     <div class="input-group mb-3 centered-input">
         <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select tire </button>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/winter" >On Special</a></li>
-            <li><a class="dropdown-item" href="/home">Tires</a></li>
+            <li><a class="dropdown-item" (click)="getTires('winter')" >Winter</a></li>
+            <li><a class="dropdown-item" (click)="getTires('')">Tires</a></li>
             <li><a class="dropdown-item" href="#">Wheels</a></li>
-            <li><a class="dropdown-item" href="#">Brands</a></li>
+            <li><a class="dropdown-item" (click)="getTires('brands')">Brands</a></li>
         </ul>
-        <input type="text" class="form-control" placeholder="Winter Tires">
+        <input type="text" [(ngModel)]="searchKey" class="form-control" placeholder="Winter Tires">
         <div class="input-group-append">
-            <button class="btn btn-orange" type="search">Search</button>
+            <button (click)="getTires(searchKey)" type="submit" class="btn btn-orange" type="search">Search</button>
         </div>
     </div>
 </div>
 
 <!-- <h2>On Special</h2> -->
-<h2 class="grp-title-text mt-4 text-center">{{this.menuSelected == 'home' ? 'All Tires' : this.menuSelected }}</h2>
+<h2 class="grp-title-text mt-4 text-center">{{this.searchKey}}</h2>
 <div *ngIf="tires?.length > 0">
     <!-- Calculate the number of rows needed -->
     <ng-container *ngFor="let item of getRows(tires)">

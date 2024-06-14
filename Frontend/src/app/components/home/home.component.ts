@@ -14,6 +14,7 @@ export class HomeComponent {
 items: any;
 tires:any;
 menuSelected:string;
+searchKey:string;
 
 constructor(
   private fb: FormBuilder,private location: Location,
@@ -24,12 +25,13 @@ constructor(
 ngOnInit(){
   let currentUrl = this.location.path();
   this.menuSelected = currentUrl.split('/')[1];
-  this.getTires();
+  this.getTires("");
 }
 
-getTires(){
+getTires(searchKey){
     debugger;
-    this.tiresService.getTires().subscribe((res)=>{
+    this.searchKey = searchKey == '' ? "All Tires" : searchKey;
+    this.tiresService.getTires(searchKey).subscribe((res)=>{
       debugger;
       this.addToLocalStorage(res);
       this.tires = res;
