@@ -56,6 +56,12 @@ public partial class SudburyTiresContext : DbContext
                 .HasMaxLength(20)
                 .IsUnicode(false)
                 .HasColumnName("size");
+            entity.Property(e => e.tireType)
+                .HasColumnType("text")
+                .HasColumnName("tireType");
+            entity.Property(e => e.seasonType)
+                .HasColumnType("text")
+                .HasColumnName("seasonType");
         });
 
         modelBuilder.Entity<User>(entity =>

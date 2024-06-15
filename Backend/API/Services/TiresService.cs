@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 
 public interface ITiresService
 {
-    List<Tire> GetTires();
+    List<Tire> GetTires(string searchKey);
 }
 
 public class TiresService : ITiresService
@@ -18,9 +18,9 @@ public class TiresService : ITiresService
         _tiresRepository = tiresRepository;
     }
 
-    public List<Tire> GetTires()
+    public List<Tire> GetTires(string searchKey)
     {
-        var tires = _tiresRepository.GetTires();
+        var tires = _tiresRepository.GetTires(searchKey);
 
         return tires;
     }

@@ -18,4 +18,6 @@ public partial class Tire
     public decimal? Price { get; set; }
 
     public string? Detail { get; set; }
+    public string? tireType { get; set; }
+    public string? seasonType { get; set; }
 }

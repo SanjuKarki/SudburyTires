@@ -6,7 +6,7 @@ namespace API.Repository
     // Interface defining the contract for tire-related data operations
     public interface ITiresRepository
     {
-        List<Tire> GetTires();
+        List<Tire> GetTires(string searchKey);
     }
 
     public class TiresRepository : ITiresRepository
@@ -18,9 +18,26 @@ namespace API.Repository
             _dbContext = dbContext;
         }
 
-        public List<Tire> GetTires()
+        public List<Tire> GetTires(string searchKey)
         {
-            var tires = _dbContext.Tires.ToList();
+            List<Tire> tires = null;
+            if (string.IsNullOrEmpty(searchKey))
+            {
+                tires = _dbContext.Tires.ToList();
+            }
+            else if (searchKey?.ToLower()=="brands")
+            {
+                tires = _dbContext.Tires
+                          .GroupBy(t => t.Brand) // Group by brand
+                          .Select(g => g.First()) // Select the first item in each group
+                          .ToList();
+
+            }
+            else
+            {
+                tires = _dbContext.Tires.Where(x => x.Detail.Contains(searchKey) 
+                || x.Name.Contains(searchKey) || x.Brand.Contains(searchKey)).ToList();
+            }
             return tires;
         }
 

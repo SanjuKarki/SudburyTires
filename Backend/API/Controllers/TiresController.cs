@@ -16,9 +16,9 @@ namespace API.Controllers
         }
 
         [HttpGet("getTires")]
-        public IActionResult GetTires()
+        public IActionResult GetTires([FromQuery] string? searchKey)
         {
-            var tires = _tiresService.GetTires();
+            var tires = _tiresService.GetTires(searchKey);
             return Ok(tires);
         }
     } 
