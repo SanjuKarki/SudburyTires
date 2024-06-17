@@ -46,8 +46,6 @@ export class TireDetailComponent {
     //   // Add more tire objects as needed
     // ];
 
-    
-    //this.selectedTire = this.tires.find(tire => tire.id.toString() === id);
   }
 
   getTiresFromLocalStorage(): any {

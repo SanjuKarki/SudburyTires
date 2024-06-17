@@ -9,19 +9,19 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/home">On Special</a>
+                    <a class="nav-link" (click)="getTiresByMenu('onSale')">On Special</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/home">Tires</a>
+                    <a class="nav-link" (click)="getTiresByMenu('')">Tires</a>
                 </li>
                 <!-- <li class="nav-item active">
                     <a class="nav-link" href="/winter">Winter</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Wheels</a>
+                    <a class="nav-link" (click)="getTiresByMenu('winter')">Winter Tires</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/brands">Brands</a>
+                    <a class="nav-link" (click)="getTiresByMenu('brands')" >Brands</a>
                 </li>
             </ul>
         </div>

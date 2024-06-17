@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
 
+  @Output() menu = new EventEmitter<string>();
+  
   constructor(
     private router: Router
   ) { }
@@ -19,6 +22,11 @@ export class NavbarComponent {
   removeFromLocalStorage() {
     localStorage.removeItem('SignedIn');
     this.router.navigate(['login']);
+  }
+
+  getTiresByMenu(menu:string){
+    debugger;
+    this.menu.emit(menu);
   }
 
 }

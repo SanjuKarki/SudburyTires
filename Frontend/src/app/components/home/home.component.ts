@@ -15,6 +15,7 @@ items: any;
 tires:any;
 menuSelected:string;
 searchKey:string;
+searchTitle:string = "All Tires";
 
 constructor(
   private fb: FormBuilder,private location: Location,
@@ -28,31 +29,17 @@ ngOnInit(){
   this.getTires("");
 }
 
-getTires(searchKey){
+getTires(searchKey,isSearch=false){
     debugger;
-    this.searchKey = searchKey == '' ? "All Tires" : searchKey;
+    if(!isSearch){
+      this.searchTitle = searchKey;
+      this.searchKey = searchKey;
+    }
     this.tiresService.getTires(searchKey).subscribe((res)=>{
       debugger;
       this.addToLocalStorage(res);
       this.tires = res;
-      if((this.menuSelected !='' || this.menuSelected !=undefined) && (this.menuSelected != "home")) {
-      this.tires = res.filter(x => 
-        (x.seasonType || '').toLowerCase() === (this.menuSelected || '').toLowerCase()
-    );
-  }
-    }
-        // response => {
-        //   this.isValidUser=true;
-        //   debugger;
-        //   this.ErrorMsg = "User validated successfully"
-        //   this.router.navigate(['home']);
-
-        // }, // Handle success response
-        // error => {
-        //   this.isValidUser=false;
-        //   this.ErrorMsg = error.error.message == undefined ? "Login failed!" : error.error.message+"!";
-        // } // Handle error response
-      );
+});
 }
 
 // Add tire data to localStorage
@@ -60,6 +47,11 @@ addToLocalStorage(tire: any) {
   if(!localStorage.getItem('tires') || localStorage.getItem('tires') != JSON.stringify(tire) ){
   localStorage.setItem('tires', JSON.stringify(tire));
   }
+}
+
+receiveMessage($event: string) {
+  debugger;
+  this.getTires($event);
 }
 
 getRows(tires: any[]): any[] {
@@ -87,4 +79,5 @@ interface Tire {
   size: string;
   price: number;
   detail: string;
+  onSale:boolean;
 }

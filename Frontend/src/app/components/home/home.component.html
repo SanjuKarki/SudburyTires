@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbar (menu)="receiveMessage($event)" ></app-navbar>
 <div class="image-container">
     <img src="assets/imgs/Tire.jpg" alt="Image">
     <div class="input-group mb-3 centered-input">
@@ -6,18 +6,18 @@
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" (click)="getTires('winter')" >Winter</a></li>
             <li><a class="dropdown-item" (click)="getTires('')">Tires</a></li>
-            <li><a class="dropdown-item" href="#">Wheels</a></li>
+            <li><a class="dropdown-item" (click)="getTires('summer')">Summer</a></li>
             <li><a class="dropdown-item" (click)="getTires('brands')">Brands</a></li>
         </ul>
         <input type="text" [(ngModel)]="searchKey" class="form-control" placeholder="Winter Tires">
         <div class="input-group-append">
-            <button (click)="getTires(searchKey)" type="submit" class="btn btn-orange" type="search">Search</button>
+            <button (click)="getTires(searchKey,true)" type="submit" class="btn btn-orange" type="search">Search</button>
         </div>
     </div>
 </div>
 
 <!-- <h2>On Special</h2> -->
-<h2 class="grp-title-text mt-4 text-center">{{this.searchKey}}</h2>
+<h2 class="grp-title-text mt-4 text-center">All tires {{ searchKey ? '(' + searchKey + ')' : '' }}</h2>
 <div *ngIf="tires?.length > 0">
     <!-- Calculate the number of rows needed -->
     <ng-container *ngFor="let item of getRows(tires)">
@@ -27,8 +27,9 @@
                 <div class="card mb-3 mr-3" (click)="GetItemDetail(tire)">
                     <img class="card-img-top" src="{{tire.imagePath}}" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">{{tire.name}}</h5>
-                        <a (click)="GetItemDetail(tire)" class="btn btn-warning on-sale-btn">On Sale</a>
+                        <h5 class="card-title"> {{this.searchKey =='brands' ? tire.brand : tire.name}}</h5>
+                       
+                        <a *ngIf="tire.onSale && this.searchKey !='brands'" (click)="GetItemDetail(tire)" class="btn btn-warning on-sale-btn">On Sale</a>
 
                     </div>
                 </div>
