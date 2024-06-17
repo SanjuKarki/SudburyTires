@@ -20,4 +20,5 @@ public partial class Tire
     public string? Detail { get; set; }
     public string? tireType { get; set; }
     public string? seasonType { get; set; }
+    public bool? onSale { get; set; }
 }

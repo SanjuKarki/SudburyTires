@@ -62,6 +62,8 @@ public partial class SudburyTiresContext : DbContext
             entity.Property(e => e.seasonType)
                 .HasColumnType("text")
                 .HasColumnName("seasonType");
+            entity.Property(e => e.onSale)
+               .HasColumnName("onSale");
         });
 
         modelBuilder.Entity<User>(entity =>

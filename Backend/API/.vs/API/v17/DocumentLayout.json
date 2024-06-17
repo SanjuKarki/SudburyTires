@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\model\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:model\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\model\\sudburytirescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:model\\sudburytirescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\repository\\tiresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:repository\\tiresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\services\\tiresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\controllers\\tirescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:controllers\\tirescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\model\\sudburytirescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:model\\sudburytirescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\model\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|solutionrelative:model\\tire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CFCAEB11-0282-4199-97C9-4F10EEC89770}|API.csproj|d:\\01 - cambrian college\\capstone project\\sudburytires\\backend\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -82,24 +82,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\User.cs",
-              "RelativeDocumentMoniker": "Model\\User.cs",
-              "ToolTip": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\User.cs",
-              "RelativeToolTip": "Model\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T22:55:05.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "DbContext.cs",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Models\\DbContext.cs",
               "RelativeDocumentMoniker": "Models\\DbContext.cs",
@@ -112,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SudburyTiresContext.cs",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\SudburyTiresContext.cs",
               "RelativeDocumentMoniker": "Model\\SudburyTiresContext.cs",
               "ToolTip": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\SudburyTiresContext.cs",
               "RelativeToolTip": "Model\\SudburyTiresContext.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAkwDYAAAAkAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAgwBEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T22:52:58.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TiresController.cs",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Controllers\\TiresController.cs",
               "RelativeDocumentMoniker": "Controllers\\TiresController.cs",
@@ -133,38 +120,37 @@
               "RelativeToolTip": "Controllers\\TiresController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwBMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T22:53:27.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T22:53:27.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "TiresService.cs",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Services\\TiresService.cs",
               "RelativeDocumentMoniker": "Services\\TiresService.cs",
               "ToolTip": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Services\\TiresService.cs",
               "RelativeToolTip": "Services\\TiresService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBYAAAArAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T22:56:13.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TiresRepository.cs",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Repository\\TiresRepository.cs",
               "RelativeDocumentMoniker": "Repository\\TiresRepository.cs",
               "ToolTip": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Repository\\TiresRepository.cs",
               "RelativeToolTip": "Repository\\TiresRepository.cs",
-              "ViewState": "AQIAABIAAACgmZmZmZkdwCEAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwBkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T22:52:19.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -172,12 +158,36 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwBoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:38:09.091Z",
+              "WhenOpened": "2024-05-22T02:38:09.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tire.cs",
+              "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\Tire.cs",
+              "RelativeDocumentMoniker": "Model\\Tire.cs",
+              "ToolTip": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\Tire.cs",
+              "RelativeToolTip": "Model\\Tire.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAwwBYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T22:55:15.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T22:55:05.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -190,19 +200,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Tire.cs",
-              "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\Tire.cs",
-              "RelativeDocumentMoniker": "Model\\Tire.cs",
-              "ToolTip": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\Model\\Tire.cs",
-              "RelativeToolTip": "Model\\Tire.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA8wBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T22:55:15.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\01 - Cambrian College\\Capstone project\\SudburyTires\\Backend\\API\\appsettings.json",
@@ -211,8 +208,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-22T02:38:09.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T02:38:09.351Z"
             },
             {
               "$type": "Document",

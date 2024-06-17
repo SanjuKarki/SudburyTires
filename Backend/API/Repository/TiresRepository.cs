@@ -33,10 +33,14 @@ namespace API.Repository
                           .ToList();
 
             }
+            else if(searchKey?.ToLower() == "onsale")
+            {
+                tires = _dbContext.Tires.Where(x => x.onSale == true ).ToList();
+            }
             else
             {
-                tires = _dbContext.Tires.Where(x => x.Detail.Contains(searchKey) 
-                || x.Name.Contains(searchKey) || x.Brand.Contains(searchKey)).ToList();
+                tires = _dbContext.Tires.Where(x => x.Detail.ToLower().Contains(searchKey.ToLower()) 
+                || x.Name.Contains(searchKey.ToLower()) || x.Brand.ToLower().Contains(searchKey.ToLower())).ToList();
             }
             return tires;
         }
